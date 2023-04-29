@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+}
+.container{
+    display: grid;
+    grid-template-rows: 1.5fr 3fr;
+    width: 300px;
+    
+}
+.top{
+    background-image: url(images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.bottom{
+    text-align: center;
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.bottom h1{
+    margin: 10px 0;
+}
+.bottom>p{
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    color: hsl(224, 23%, 55%);
+}
+.plan_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 8px;
+    background-color: hsl(225, 100%, 98%);
+    margin-bottom: 20px;
+}
+.plan_container img{
+    height: 30px;
+}
+.annual-plan{
+    display: flex;
+    align-items: center;
+    text-align: start;
+    gap: 10px;
+}
+.annual-plan h2{
+    font-size: 16px;
+}
+.annual-plan p{
+    color: hsl(224, 23%, 55%);
+    font-size: 13px;
+}
+.plan_container a{
+    font-size: 12px;
+}
+.plan_container a:hover{
+    text-decoration: none;
+}
+button{
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 2px 10px 10px #00000050;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+.cancel{
+    font-size: 12px;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+@media screen and (max-width:600px){
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
